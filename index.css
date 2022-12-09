@@ -3,6 +3,8 @@
     padding:0;
     background-image:white;
     font-size: large;
+    background-image:url(background\ image.jpeg);
+    background size: 100px 150px;
 }
 nav{
     background-color:red;
