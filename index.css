@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    background-image:white;
+    font-size: large;
+}
+nav{
+    background-color:red;
+    height:80px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:0 5px;
+    line-height:80px;
+}
