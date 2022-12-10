@@ -3,7 +3,7 @@
     padding:0;
     background-image:white;
     font-size: large;
-    background-image:url(background\ image.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(night\ sky\ \(1\).jpg);
     background size: 100px 150px;
 }
 nav{
@@ -20,4 +20,53 @@ nav ul li{
     display:inline-block;
     margin:0 5px;
     line-height:80px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px ;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:red;
+}
+
+.logo img{
+    float:left;
+    width: 150px
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position:absolute;
+    top: 40%;
+    left: 30%;
+    transform: transalte(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+
+}
+.button {
+     position:absolute;
+    top: 55%;
+    left: 43%;
+    transform: transalte(-50%,-50%);
+
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color:red;
 }
