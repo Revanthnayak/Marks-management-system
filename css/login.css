@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    background-image:white;
+    font-size: large;
+}
+nav{
+    background-color:red;
+    height:80px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:0 5px;
+    line-height:80px;
+}
+
+
+
+
+.container{
+    background-color:rgb(180,176,176);
+    border: 5px solid rgb(64, 4, 176);
+    padding: 30px;
+    padding-top: 20px;
+    width: 360px;
+    height: 580px;
+    margin-left: 700px;
+    margin-top: 100px;
+}
+
+.container h1{
+    padding: 30px;
+    text-align:center;
+}
