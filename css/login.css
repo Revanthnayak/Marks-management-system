@@ -38,3 +38,14 @@ nav ul li{
     padding: 30px;
     text-align:center;
 }
+
+.form-container{
+    min-height:100vh;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px; 
+    background:#eee;
+    padding-top: 100px;
+}

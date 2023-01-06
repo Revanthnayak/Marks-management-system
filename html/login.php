@@ -22,9 +22,18 @@
         <h1>
             LOG IN
         </h1>
+   
+        <form class="form-container">
 
+<form action="" method="post">
   
-    </form>
+  <input type="email" name="email" required placeholder="enter your email">
+  <input type="password" name="password" required placeholder="enter your password">
+  <input type="submit" name="submit" value="login now" class="form-btn">
+  <p>Don't have an account?<a href="register.php">register now</a></p>
+
+</form>
+</form>
 
 
     </div>
