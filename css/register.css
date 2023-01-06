@@ -29,9 +29,56 @@ nav ul li{
     height:580px;
     margin-left:700px;
     margin-top:100px;
-}
-
-.container{
     padding:30px;
     text-align: center;
 }
+
+.form-container{
+    min-height:100vh;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px; 
+    background:#eee;
+    padding-top: 100px;
+}
+
+
+
+
+/* design not working. sort it later*/
+/*
+.form-container form{
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    background:#fff;
+    text-align: center;
+    width:500px;
+}
+
+.form-container form input{
+    width:100%;
+    padding:10px 15px;
+    font-size: 20px;
+}
+
+.form-container form input,
+.form-container form select{
+    width:100%;
+    padding:10px 15px;
+    font-size:17px;
+    margin:8px 0;
+}
+
+.form-container form select option{
+    background:#fff;
+}
+
+.form-container form .from-btn{
+    background:#fbd0d9;
+    color:crimson;
+    text-transform: uppercase;
+}
+8/
