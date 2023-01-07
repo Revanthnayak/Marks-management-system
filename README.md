@@ -1,1 +1,0 @@
-# dbms-mini-project
