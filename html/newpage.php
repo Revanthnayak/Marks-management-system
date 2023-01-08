@@ -21,7 +21,7 @@
         </nav>
         
         <div class="button">
-        <a href="" class="btn">Enter Your Marks</a>
+        <a href="markspage.php" class="btn">Enter Your Marks</a>
         <a href="" class="btn">Display Marks</a> 
         </div>
     </header>
