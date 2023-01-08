@@ -3,6 +3,7 @@
     padding:0;
     background-image:white;
     font-size: large;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../\night\ sky\ \(1\).jpg);
 }
 nav{
     background-color:red;
@@ -19,6 +20,17 @@ nav ul li{
     margin:0 5px;
     line-height:80px;
 }
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px ;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:red;
+}
 
 .container{
     background-color: rgb(180, 176,176);
@@ -26,30 +38,84 @@ nav ul li{
     padding:30px;
     padding-top: 20px;
     width:360px;
-    height:580px;
-    margin-left:700px;
-    margin-top:100px;
+    height:400px;
+    margin-left:550px;
+    margin-top:50px;
     padding:30px;
     text-align: center;
+    
+}
+.container h1{
+    color: white;
+    font-size: 20px;
 }
 
+
+/*php css*/
 .form-container{
-    min-height:100vh;
+    min-height:40vh;
     display:block;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    padding-bottom: 60px; 
-    background:#eee;
-    padding-top: 100px;
+    padding-bottom: 30px; 
+    
+    padding-top: 50px;
+    
+}
+.form-container form{
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    background:white;
+    text-align: center;
+    width:500px;
 }
 
+.form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+.form-container form input,
+.form-container.form.select{
+    width:100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background:white;
+    border-radius: 5px;
+}
+.form-container form select option{
+    background:white;
+}
+.form-container form .from-btn{
+    background:white;
+    color:crimson;
+    text-transform: capitalize;
+     font-size: 20px;
+     cursor: pointer;
+}
+.form-container form .from-btn:hover{
+    background:crimson;
+    color:#fff;
+}
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+.form-container form p a{
+    color: crimson;
+}
 
 
 
 /* design not working. sort it later*/
 /*
-.form-container form{
+.form-container form h3{
     padding:20px;
     border-radius:5px;
     box-shadow:0 5px 10px rgba(0,0,0,.1);

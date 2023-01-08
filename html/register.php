@@ -34,58 +34,54 @@ if(isset($_POST['submit'])){
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/register.css">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register form</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/register.css">
+
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+<nav class="navbar">
+            <div class="logo">
+                 
+            </div>
             <ul>
                 <li><a href="../index.php">HOME</a></li>
                 <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
             </ul>
         </nav>
-    </header>
+   
+<div class="form-container">
 
-    <div class="container">
-        <h1>
-            REGISTER
-        </h1>
-    
-        <div class="form-container">
-
-<form action="" method="post">
-   <h3>register now</h3>
-   <?php
-   if(isset($error)){
-      foreach($error as $error){
-         echo '<span class="error-msg">'.$error.'</span>';
+   <form action="" method="post">
+      <h3>register now</h3>
+      <?php
+      if(isset($error)){
+         foreach($error as $error){
+            echo '<span class="error-msg">'.$error.'</span>';
+         };
       };
-   };
-   ?>
-    <input type="text" name="name" required placeholder="enter your name">
-    <input type="email" name="email" required placeholder="enter your email">
-    <input type="text" name="usn" required placeholder="enter your usn">
-    <input type="password" name="password" required placeholder="enter your password">
-    <input type="password" name="cpassword" required placeholder="confirm ">
-    <select name="user_type">
-        <option value="user">user</option>
-        <option value="admin">admin</option>
-    </select>
-    <input type="submit" name="submit" value="REGISTER NOW" class="form-btn">
-    <p>already have an account?<a href="login.php">login now</a></p>
+      ?>
+      <input type="text" name="name" required placeholder="enter your name">
+      <input type="email" name="email" required placeholder="enter your email">
+      <input type="password" name="password" required placeholder="enter your password">
+      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <select name="user_type">
+         <option value="user">user</option>
+         <option value="admin">admin</option>
+      </select>
+      <input type="submit" name="submit" value="register now" class="form-btn">
+      <p>already have an account? <a href="login_form.php">login now</a></p>
+   </form>
 
-  </form>
-</form>
+</div>
 
-    </div>
 </body>
 </html>
