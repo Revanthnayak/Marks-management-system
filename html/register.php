@@ -30,8 +30,6 @@ if(isset($_POST['submit'])){
    }
 
 };
-
-
 ?>
 
 <!DOCTYPE html>
@@ -78,10 +76,9 @@ if(isset($_POST['submit'])){
          <option value="admin">admin</option>
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
+      <p>already have an account? <a href="login.php">login now</a></p>
    </form>
 
 </div>
-
 </body>
 </html>
