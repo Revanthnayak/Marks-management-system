@@ -6,6 +6,7 @@ if(isset($_POST['submit'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $usn = mysqli_real_escape_string($conn, $_POST['usn']);
    $pass = md5($_POST['password']);
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
@@ -23,9 +24,9 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $error[] = 'password not matched!';
       }else{
-         $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
+         $insert = "INSERT INTO user_form(name, email,usn, password, user_type) VALUES('$name','$email','$usn','$pass','$user_type')";
          mysqli_query($conn, $insert);
-         header('location:login_form.php');
+         header('location:login.php');
       }
    }
 
@@ -68,7 +69,7 @@ if(isset($_POST['submit'])){
       };
       ?>
       <input type="text" name="name" required placeholder="enter your name">
-      <input type="email" name="email" required placeholder="enter your email">
+      <input type="email" name="email" required placeholder="enter your email"><input type="text" name="usn" required placeholder="enter your usn">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="password" name="cpassword" required placeholder="confirm your password">
       <select name="user_type">

@@ -3,7 +3,7 @@
 @include 'config.php';
 
 if(isset($_POST['submit'])){
-
+    $stuid = mysqli_real_escape_string($conn, $_POST['stuid']);
    $me = mysqli_real_escape_string($conn, $_POST['me']);
    $cn = mysqli_real_escape_string($conn, $_POST['cn']);
    $dbms = mysqli_real_escape_string($conn, $_POST['dbms']);
@@ -11,9 +11,9 @@ if(isset($_POST['submit'])){
    $adp = mysqli_real_escape_string($conn, $_POST['adp']);
    $unix = mysqli_real_escape_string($conn, $_POST['unix']);
 
-   $insert = "INSERT INTO user_data(me,cn,dbms,atc,adp,unix) VALUES('$me','$cn','$dbms','$atc','$adp','$unix')";
+   $insert = "INSERT INTO user_data(stuid,me,cn,dbms,atc,adp,unix) VALUES('$stuid','$me','$cn','$dbms','$atc','$adp','$unix')";
          mysqli_query($conn, $insert);
-         header('location:login_form.php');
+         header('location:display.php');
 };
 ?>
 
@@ -41,6 +41,7 @@ if(isset($_POST['submit'])){
         <div class="form-container1">
 
 <form action="" method="post">
+<input type="text" name="stuid" required placeholder="enter your id">
    <input type="text" name="me" required placeholder="enter your me marks">
    <input type="text" name="cn" required placeholder="enter your cn marks">
    <input type="text" name="dbms" required placeholder="enter your dbms marks">
