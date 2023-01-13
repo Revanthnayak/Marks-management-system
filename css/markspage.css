@@ -34,61 +34,155 @@ ul li a:hover{
 
 /* form contianer1*/
 /*php css*/
-.form-container{
-    min-height:40vh;
-    display:block;
+.form-container1{
+    min-height:60vh;
+    max-width: 50vh;
+    display:relative;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
     padding-bottom: 30px; 
-    
     padding-top: 50px;
-    
-}
-.form-container form{
-    padding:20px;
-    border-radius:5px;
-    box-shadow:0 5px 10px rgba(0,0,0,.1);
-    background:white;
-    text-align: center;
-    width:500px;
+    margin:70px;
+    margin-left:  700px;
+    border:5px solid rgb(0, 0, 1);
 }
 
-.form-container1 form h3{
+.form-container1 form{
+    min-height: 55vh;
+    padding:40px;
+    border-radius:5px;
+    width:40vh;
+    border:5px solid rgb(251, 254, 252); 
+}
+
+.form-container1 p{
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     color: white;
+    text-align: center;
 }
 .form-container1 form input,
 .form-container1.form.select{
-    width:100%;
-    padding:10px 15px;
+    width:50%;
+    padding:10px 5px;
     font-size: 17px;
     margin:8px 0;
     background:white;
     border-radius: 5px;
-}
-.form-container1 form select option{
-    background:white;
-}
-.form-container1 form .from-btn{
-    background:white;
-    color:crimson;
-    text-transform: capitalize;
-     font-size: 20px;
-     cursor: pointer;
-}
-.form-container1 form .from-btn:hover{
-    background:crimson;
-    color:#fff;
+    margin-left: 10vh;
 }
 .form-container1 form p{
-    margin-top: 10px;
-    font-size: 20px;
     color: white;
+    display: relative;
+    text-align: center;
+    font-size: large;
+    
+}
 
+/* form contianer2*/
+/*php css*/
+.form-container2{
+    min-height:60vh;
+    max-width: 50vh;
+    display:relative;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 30px; 
+    padding-top: 50px;
+    margin:70px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border:5px solid rgb(6, 6, 6);
 }
-.form-container1 form p a{
-    color: crimson;
+
+.form-container2 form{
+    min-height: 55vh;
+    padding:40px;
+    border-radius:5px;
+    width:40vh;
+    border:5px solid rgb(251, 254, 252); 
 }
+
+.form-container2 p{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: white;
+    text-align: center;
+}
+.form-container2 form input,
+.form-container2.form.select{
+    width:50%;
+    padding:10px 5px;
+    font-size: 17px;
+    margin:8px 0;
+    background:white;
+    border-radius: 5px;
+    margin-left: 10vh;
+}
+.form-container2 form p{
+    color: white;
+    display: relative;
+    text-align: center;
+    font-size: large;
+    
+}
+
+
+
+/* form contianer3*/
+/*php css*/
+.form-container3{
+    min-height:60vh;
+    max-width: 50vh;
+    display:relative;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 30px; 
+    padding-top: 50px;
+    margin:70px;
+    margin-left: 700px;
+    margin-bottom: 700px;
+    margin-top: 50px;
+    border:5px solid rgb(12, 12, 12);
+}
+
+.form-container3 form{
+    min-height: 55vh;
+    padding:40px;
+    border-radius:5px;
+    width:40vh;
+    border:5px solid rgb(251, 254, 252); 
+}
+
+.form-container3 p{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: white;
+    text-align: center;
+}
+.form-container3 form input,
+.form-container3.form.select{
+    width:50%;
+    padding:10px 5px;
+    font-size: 17px;
+    margin:8px 0;
+    background:white;
+    border-radius: 5px;
+    margin-left: 10vh;
+}
+.form-container3 form p{
+    color: white;
+    display: relative;
+    text-align: center;
+    font-size: large;
+    
+}
+
+

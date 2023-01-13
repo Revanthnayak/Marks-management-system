@@ -49,3 +49,14 @@ ul li a:hover{
    background-color: #fff;
    color:blue;
 } 
+.title{
+    position:absolute;
+    top: 40%;
+    left: 20%;
+    transform: transalte(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+
+}

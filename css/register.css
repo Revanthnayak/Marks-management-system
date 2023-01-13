@@ -59,8 +59,8 @@ ul li a:hover{
     justify-content: center;
     padding: 20px;
     padding-bottom: 30px; 
-    
-    padding-top: 50px;
+    padding-left: 675px;
+    padding-top: 150px;
     
 }
 .form-container form{
@@ -81,14 +81,14 @@ ul li a:hover{
 .form-container form input,
 .form-container.form.select{
     width:100%;
-    padding:10px 15px;
-    font-size: 17px;
+    padding:10px 1px;
+    font-size: 18px;
     margin:8px 0;
     background:white;
     border-radius: 5px;
 }
 .form-container form select option{
-    background:white;
+    background: white;
 }
 .form-container form .from-btn{
     background:white;
@@ -96,6 +96,7 @@ ul li a:hover{
     text-transform: capitalize;
      font-size: 20px;
      cursor: pointer;
+     align:center;
 }
 .form-container form .from-btn:hover{
     background:crimson;

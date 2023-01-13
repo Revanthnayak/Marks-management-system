@@ -15,7 +15,7 @@
             </div>
             <ul>
                 <li><a href="#">HOME</a></li>
-                <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
+                <LI><A HREF="html/about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
             </ul>
         </nav>

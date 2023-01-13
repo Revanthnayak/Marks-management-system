@@ -19,6 +19,9 @@
                 <li><a href="#">SERVICES</a></li>
             </ul>
         </nav>
+        <div class="title">
+            <h1>Welcome to Marks Management System</h1>
+        </div>
         
         <div class="button">
         <a href="markspage.php" class="btn">Enter Your Marks</a>
