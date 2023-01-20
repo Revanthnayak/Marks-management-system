@@ -15,8 +15,9 @@
             </div>
             <ul>
                 <li><a href="#">HOME</a></li>
-                <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
+                <LI><A HREF="about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
+                <li><a href="../index.php" >Log out</a></li>
             </ul>
         </nav>
         <div class="title">
@@ -25,7 +26,7 @@
         
         <div class="button">
         <a href="markspage.php" class="btn">Enter Your Marks</a>
-        <a href="" class="btn">Display Marks</a> 
+        <a href="display.php" class="btn">Display Marks</a> 
         </div>
     </header>
 </body>

@@ -52,8 +52,9 @@ if(isset($_POST['submit'])){
             </div>
             <ul>
                 <li><a href="../index.php">HOME</a></li>
-                <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
+                <LI><A HREF="about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
+                <li><li><a href="../index.php" >Log out</a></li></li>
             </ul>
         </nav>
    

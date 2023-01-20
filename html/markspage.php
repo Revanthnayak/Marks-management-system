@@ -73,6 +73,7 @@ if(isset($_POST['submit2'])){
                 <li><a href="../index.php">HOME</a></li>
                 <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
+                <li><a href="../index.php" >Log out</a></li>
             </ul>
         </nav>
 

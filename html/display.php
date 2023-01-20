@@ -1,4 +1,27 @@
-<table border="1">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/display.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar">
+            <div class="logo">
+                 
+            </div>
+            <ul>
+                <li><a href="../index.php">HOME</a></li>
+                <LI><A HREF="about.html">ABOUT</A></LI>
+                <li><a href="#">SERVICES</a></li>
+                <li><li><a href="../index.php" >Log out</a></li></li>
+            </ul>
+        </nav>
+        <table border="5">
     <tr>
         <th>me</th>
         <th>cn</th>
@@ -8,8 +31,8 @@
         <th>unix</th>
 
     </tr>
-</table>
-<?php 
+    </table>
+    <?php 
 $connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
 $query="select ud.*,uf.name from user_form uf,user_data ud where uf.id=ud.stuid  ";
 $result=mysqli_query($connect,$query);
@@ -27,3 +50,6 @@ while($row=mysqli_fetch_assoc($result))
     <?php
 }
 ?>
+
+</body>
+</html>
