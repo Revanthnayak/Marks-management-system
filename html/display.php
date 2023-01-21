@@ -18,7 +18,7 @@
                 <li><a href="../index.php">HOME</a></li>
                 <LI><A HREF="about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
-                <li><li><a href="../index.php" >Log out</a></li></li>
+                <li><li><a href="newpage.php" >Log out</a></li></li>
             </ul>
         </nav>
         <table border="5">

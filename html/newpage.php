@@ -27,6 +27,7 @@
         <div class="button">
         <a href="markspage.php" class="btn">Enter Your Marks</a>
         <a href="display.php" class="btn">Display Marks</a> 
+        <a href="average.php" class="btn">Average Marks</a>
         </div>
     </header>
 </body>
