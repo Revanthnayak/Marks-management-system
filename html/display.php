@@ -18,20 +18,26 @@
                 <li><a href="../index.php">HOME</a></li>
                 <LI><A HREF="about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
-                <li><li><a href="newpage.php" >Log out</a></li></li>
+                <li><li><a href="newpage.php" >LOG OUT</a></li></li>
             </ul>
         </nav>
-        <table border="5">
-    <tr>
-        <th>name</th>
-        <th>me</th>
-        <th>cn</th>
-        <th>dbms</th>
-        <th>atc</th>
-        <th>adp</th>
-        <th>unix</th>
-    </tr>
-    </table>
+
+
+        <table class="table" border="5">
+<thead >
+  <tr>
+
+    <th scope="col">NAME&nbsp;</th>
+    <th scope="col">ME&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">CN&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">DBMS&nbsp;</th>
+    <th scope="col">ATC&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">ADP&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">UNIX&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+
+<tbody>  
     <?php 
 $connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
 $query="select ud.*,uf.name from user_form uf,user_data ud  where uf.id=ud.stuid";
@@ -40,29 +46,37 @@ while($row=mysqli_fetch_assoc($result))
 {
     ?>
     <tr>
-    <d><?php echo $row['name']?></d>
-        <d><?php echo $row['me']?></d>
-        <d><?php echo $row['cn']?></d>
-        <d><?php echo $row['dbms']?></d>
-        &nbsp;&nbsp;<d><?php echo $row['atc']?></d>
-        <d><?php echo $row['adp']?></d>
-        <d><?php echo $row['unix']?></d>
+    <td><?php echo $row['name']?></td>
+        <td><?php echo $row['me']?></td>
+        <td><?php echo $row['cn']?></td>
+        <td><?php echo $row['dbms']?></td>
+        <td><?php echo $row['atc']?></td>
+        <td><?php echo $row['adp']?></td>
+        <td><?php echo $row['unix']?></td>
         
         <br>
     </tr>
     <?php
 }
 ?>
-<table border="5">
-   <br><br> <tr><th>name</th>
-        <th>me1</th>
-        <th>$cn1</th>
-        <th>dbms1</th>
-        <th>atc1</th>
-        <th>adp1</th>
-        <th>unix1</th>
-    </tr>
-    </table>
+</tbody>
+
+
+<table class="table" border="5">
+
+<thead >
+  <tr>
+    <th scope="col">NAME&nbsp;</th>
+    <th scope="col">ME1&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">CN1&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">DBMS1&nbsp;</th>
+    <th scope="col">ATC1&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">ADP1&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">UNIX1&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+  
+  <tbody>
 <?php
 $query1="select ud1.*,uf.name from user_form uf,user_data1 ud1  where uf.id=ud1.stuid1";
 $result=mysqli_query($connect,$query1);
@@ -70,29 +84,38 @@ while($row=mysqli_fetch_assoc($result))
 {
     ?>
     <tr>
-    <d><d><?php echo $row['name']?></d>
-        <d><?php echo $row['me1']?></d>
-        <d><?php echo $row['cn1']?></d>
-        <d><?php echo $row['dbms1']?></d>
-        <d><?php echo $row['atc1']?></d>
-        <d><?php echo $row['adp1']?></d>
-        <d><?php echo $row['unix1']?></d>
+    
+    <td><?php echo $row['name']?></td>
+        <td><?php echo $row['me1']?></td>
+        <td><?php echo $row['cn1']?></td>
+        <td><?php echo $row['dbms1']?></td>
+        <td><?php echo $row['atc1']?></td>
+        <td><?php echo $row['adp1']?></td>
+        <td><?php echo $row['unix1']?></td>
         
         <br>
     </tr>
     <?php
 }
-?>
-<table border="5">
-    <br><br><tr><th>name</th>
-        <th>me2</th>
-        <th>cn2</th>
-        <th>dbms2</th>
-        <th>atc2</th>
-        <th>adp2</th>
-        <th>unix2</th>
-    </tr>
-    </table>
+?></tbody>
+
+
+
+
+<table class="table" border="5">
+<thead >
+  <tr>
+    <th scope="col">NAME&nbsp;</th>
+    <th scope="col">ME2&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">CN2&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">DBMS2&nbsp;</th>
+    <th scope="col">ATC2&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">ADP2&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th scope="col">UNIX2&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+  
+  <tbody>
 
 <?php
 $query2="select ud2.*,uf.name from user_form uf,user_data2 ud2  where uf.id=ud2.stuid2";
@@ -101,18 +124,21 @@ while($row=mysqli_fetch_assoc($result))
 {
     ?>
     <tr>
-    <d><d><?php echo $row['name']?></d>
-        <d><?php echo $row['me2']?></d>
-        <d><?php echo $row['cn2']?></d>
-        <d><?php echo $row['dbms2']?></d>
-        <d><?php echo $row['atc2']?></d>
-        <d><?php echo $row['adp2']?></d>
-        <d><?php echo $row['unix2']?></d>
+    <td><?php echo $row['name']?></td>
+        <td><?php echo $row['me2']?></td>
+        <td><?php echo $row['cn2']?></td>
+        <td><?php echo $row['dbms2']?></td>
+        <td><?php echo $row['atc2']?></td>
+        <td><?php echo $row['adp2']?></td>
+        <td><?php echo $row['unix2']?></td>
         
         <br>
     </tr>
     <?php
 }
 ?>
+<tbody>
 </body>
 </html>
+
+

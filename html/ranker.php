@@ -21,52 +21,63 @@
         </nav>
         <table border="5">
     <tr>
-        <th>name</th>
-        <th>me</th>
-        <th>cn</th>
-        <th>dbms</th>
-        <th>atc</th>
-        <th>adp</th>
-        <th>unix</th>
-        <th>me1</th>
-        <th>cn1</th>
-        <th>dbms1</th>
-        <th>atc1</th>
-        <th>adp1</th>
-        <th>unix1</th>
-        <th>me2</th>
-        <th>cn2</th>
-        <th>dbms2</th>
-        <th>atc2</th>
-        <th>adp2</th>
-        <th>unix2</th>
-        <th>totalme</th>
-        <th>totalcn</th>
-        <th>totaldbms</th>
-        <th>totalatc</th>
-        <th>totaladp</th>
-        <th>totalunix</th>
+    <th>stuid</th>
+        <th>me toppers</th>
 
         
     </tr>
     </table>
     <?php 
 $connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
-$query="select * from combined_table group by(stuid) order by (stuid)";
+$query="SELECT uf.name,stuid,avg((me+me1+me2)/3) as totalme,avg((cn+cn1+cn2)/3) as totalcn,avg((dbms+dbms1+dbms2)/3) as totaldbms,avg((atc+atc1+atc2)/3) as totalatc,avg((adp+adp1+adp2)/3) as totaladp,avg((unix+unix1+unix2)/3) as totalunix from user_form uf,user_data,user_data1,user_data2 WHERE stuid=stuid1 AND stuid1=stuid2 and uf.id=stuid and uf.id=stuid1 and uf.id=stuid2 group by (stuid) order by totalme desc";
 $result=mysqli_query($connect,$query);
 while($row=mysqli_fetch_assoc($result))
 {
     ?>
-    <tr>
+    <tr><d><?php echo $row['stuid']?></d>
+    <d><?php echo $row['name']?></d>
         <d><?php echo $row['totalme']?></d>
-        <d><?php echo $row['totalcn']?></d>
-        <d><?php echo $row['totaldbms']?></d>
-        <d><?php echo $row['totalatc']?></d>
-        <d><?php echo $row['totaladp']?></d>
-        <d><?php echo $row['totalunix']?></d>
+        
         
         <br>
     </tr>
     <?php
 }
 ?>
+<br>
+<?php 
+$connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
+$query="SELECT stuid,avg((me+me1+me2)/3) as totalme,avg((cn+cn1+cn2)/3) as totalcn,avg((dbms+dbms1+dbms2)/3) as totaldbms,avg((atc+atc1+atc2)/3) as totalatc,avg((adp+adp1+adp2)/3) as totaladp,avg((unix+unix1+unix2)/3) as totalunix from user_form,user_data,user_data1,user_data2 WHERE stuid=stuid1 AND stuid1=stuid2 group by (stuid) order by totalcn desc";
+$result=mysqli_query($connect,$query);
+while($row=mysqli_fetch_assoc($result))
+{
+    ?>
+    <tr><d><?php echo $row['stuid']?></d>
+        <d><?php echo $row['totalcn']?></d>
+        
+        
+        <br>
+    </tr>
+    <?php
+}
+?>
+
+<br>
+<?php 
+$connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
+$query="SELECT uf.name,stuid,avg((me+me1+me2)/3) as totalme,avg((cn+cn1+cn2)/3) as totalcn,avg((dbms+dbms1+dbms2)/3) as totaldbms,avg((atc+atc1+atc2)/3) as totalatc,avg((adp+adp1+adp2)/3) as totaladp,avg((unix+unix1+unix2)/3) as totalunix from user_form uf,user_data,user_data1,user_data2 WHERE stuid=stuid1 AND stuid1=stuid2 and uf.id=stuid and uf.id=stuid1 and uf.id=stuid2 group by (stuid) order by totaldbms desc";
+$result=mysqli_query($connect,$query);
+while($row=mysqli_fetch_assoc($result))
+{
+    ?>
+    <tr><d><?php echo $row['stuid']?></d>
+    <d><?php echo $row['name']?></d>
+        <d><?php echo $row['totaldbms']?></d>
+        
+        
+        <br>
+    </tr>
+    <?php
+}
+?>
+<br>
