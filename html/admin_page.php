@@ -26,7 +26,7 @@
         <table class="table" border="5">
 <thead >
   <tr>
-  <th scope="col">ID&nbsp;</th>
+  
     <th scope="col">NAME&nbsp;</th>
     <th scope="col">ME&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th scope="col">CN&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -46,25 +46,18 @@
     <th scope="col">ATC2&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th scope="col">ADP2&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th scope="col">UNIX2&nbsp;&nbsp;</th>
-    <th scope="col">AVERAGE ME&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th scope="col">AVERAGE CN&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th scope="col">AVERAGE DBMS&nbsp;</th>
-    <th scope="col">AVERAGE ATC&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th scope="col">AVERAGE ADP&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th scope="col">AVERAGE UNIX&nbsp;&nbsp;</th>
-  </tr>
 </thead>
 
 <tbody>
     <?php 
 $connect=mysqli_connect("localhost","root","","user_db") or die("connection failed");
-$query="Write query here";
+$query="select * from sheet1";
 $result=mysqli_query($connect,$query);
 while($row=mysqli_fetch_assoc($result))
 {
     ?>
     <tr>
-    <td><?php echo $row['stuid']?></td>
+    <td><?php echo $row['name']?></td>
         <td><?php echo $row['me']?></td>
         <td><?php echo $row['cn']?></td>
         <td><?php echo $row['dbms']?></td>
@@ -83,12 +76,7 @@ while($row=mysqli_fetch_assoc($result))
         <td><?php echo $row['atc2']?></td>
         <td><?php echo $row['adp2']?></td>
         <td><?php echo $row['unix2']?></td>
-        <td><?php echo $row['totalme']?></td>
-        <td><?php echo $row['totalcn']?></td>
-        <td><?php echo $row['totaldbms']?></td>
-        <td><?php echo $row['totalatc']?></td>
-        <td><?php echo $row['totaladp']?></td>
-        <td><?php echo $row['totalunix']?></td>
+   
         
         <br>
     </tr>

@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
                 <li><a href="../index.php">HOME</a></li>
                 <LI><A HREF="https://www.rvitm.edu.in/about/">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
-                <li><li><a href="../index.php" >Log out</a></li></li>
+                <li><li><a href="../index.php" >LOG OUT</a></li></li>
             </ul>
         </nav>
     </header>
