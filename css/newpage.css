@@ -35,7 +35,7 @@ ul li a:hover{
 .button {
     position:absolute;
    top: 55%;
-   left: 43%;
+   left: 30%;
    transform: transalte(-50%,-50%);
 
 }

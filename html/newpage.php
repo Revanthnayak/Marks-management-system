@@ -17,7 +17,7 @@
                 <li><a href="#">HOME</a></li>
                 <LI><A HREF="about.html">ABOUT</A></LI>
                 <li><a href="#">SERVICES</a></li>
-                <li><a href="../index.php" >Log out</a></li>
+                <li><a href="../index.php" >LOG OUT</a></li>
             </ul>
         </nav>
         <div class="title">
@@ -25,9 +25,11 @@
         </div>
         
         <div class="button">
+        <a href="ranker.php" class="btn">Topper</a>
         <a href="markspage.php" class="btn">Enter Your Marks</a>
         <a href="display.php" class="btn">Display Marks</a> 
         <a href="average.php" class="btn">Average Marks</a>
+        
         </div>
     </header>
 </body>
