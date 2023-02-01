@@ -70,7 +70,8 @@ if(isset($_POST['submit'])){
       };
       ?>
       <input type="text" name="name" required placeholder="enter your name">
-      <input type="email" name="email" required placeholder="enter your email"><input type="text" name="usn" required placeholder="enter your usn">
+      <input type="email" name="email" required placeholder="enter your email">
+      <input type="text" name="usn" required placeholder="enter your usn">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="password" name="cpassword" required placeholder="confirm your password">
       <select name="user_type">
